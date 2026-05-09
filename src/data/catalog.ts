@@ -123,4 +123,4 @@ export const PRODUCTS: Product[] = [
   }
 ];
 
-export const WHATSAPP_NUMBER = '56912345678'; // Placeholder, user should update
+export const WHATSAPP_NUMBER = '56987843957';

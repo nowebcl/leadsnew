@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CATEGORIES, PRODUCTS, Category, Product } from '@/data/catalog';
+import { CATEGORIES, PRODUCTS, Category, Product, WHATSAPP_NUMBER } from '@/data/catalog';
 import { 
   Bot, 
   ShoppingBag, 
@@ -73,7 +73,7 @@ export default function QuoteGenerator() {
     if (!selectedProduct) return '#';
     const finalIndustry = industry === 'Otro' ? (otherIndustry || 'Otro') : industry;
     const message = `Hola Noweb! 👋 Vengo del cotizador instantáneo.\n\n💼 *Negocio:* ${finalIndustry}\n📅 *Plazo:* ${deadline}\n🚀 *Interés:* ${selectedProduct.name}\n💰 *Presupuesto:* ${selectedProduct.price}`;
-    return `https://wa.me/56937409241?text=${encodeURIComponent(message)}`;
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   };
 
   const progress = (step / TOTAL_STEPS) * 100;
