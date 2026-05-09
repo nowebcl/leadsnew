@@ -11,7 +11,10 @@ export const metadata: Metadata = {
     title: "Cotizador Instantáneo | Noweb",
     description: "Obtén tu presupuesto digital en segundos. Soluciones de IA, Web y E-commerce.",
     type: "website",
-  }
+  },
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export const viewport: Viewport = {
